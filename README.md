@@ -9,12 +9,13 @@ This command will generate all sequenza input files, and output files in the cur
 
 
 ## From mpileup file usage
-For whatever reason, if an mpileup file already exists, and there's no need to re-generate bamfile, one can use the following command instead. 
+If an mpileup file already exists, there is no need to re-generate bamfile. One can use the following command instead. 
 ```bash
 sh sequenza_fromMpileup.sh <normal.pileup> <tumor.pileup> <sampleName>
+```
 
 ## From seqz file usage
-For whatever reason, if you already have a seqz file to be used for `Sequenza` you can use the following script
+If you already have a seqz file to be used for `Sequenza` you can use the following script
 ```bash
 Rscript run_sequenza.R --seqz_file <seqzFile> --output_dir <output_dir> --sample_name <sampleName>
 ```
