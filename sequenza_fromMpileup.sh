@@ -23,7 +23,7 @@ gzip $sampleName.comp.seqz.rmGLMT
 
 # Run sequenza
 echo Run Sequenza
-Rscript run_sequenza.R --seqz_file $sampleName.comp.seqz.rmGLMT -o . -s $sampleName
+Rscript run_sequenza.R --seqz_file $sampleName.comp.seqz.rmGLMT.gz -o . -s $sampleName
 
 echo done 
 # cleanup
