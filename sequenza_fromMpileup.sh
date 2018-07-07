@@ -23,7 +23,8 @@ gzip $sampleName.comp.seqz.rmGLMT
 
 # Run sequenza
 echo Run Sequenza
-Rscript run_sequenza.R --seqz_file $sampleName.comp.seqz.rmGLMT.gz -o . -s $sampleName
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" # script directory
+Rscript $DIR/run_sequenza.R --seqz_file $sampleName.comp.seqz.rmGLMT.gz -o . -s $sampleName
 
 echo done 
 # cleanup
